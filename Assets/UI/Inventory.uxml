@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Inventory" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.71); flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1; flex-basis: 50%; flex-direction: row; justify-content: flex-end;">
+            <ui:Image source="project://database/Assets/Items/Item%20Render%20Texture.renderTexture?fileID=8400000&amp;guid=d8b47eb452d2e48a6940c4020e093eac&amp;type=2#Item Render Texture" style="width: auto; flex-grow: 0; flex-basis: 80%; align-items: flex-end;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; justify-content: center; flex-basis: 50%;"/>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; position: absolute; right: 16px; bottom: 16px;">
+        <ui:Label text="Current Item" name="CurrentItemLabel" style="color: rgb(255, 255, 255); -unity-font-definition: resource(&quot;FlatSkin/Font/Roboto-Black&quot;); -unity-font-style: bold; -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); text-shadow: 1px 1px 0 rgb(0, 0, 0);"/>
+    </ui:VisualElement>
+</ui:UXML>

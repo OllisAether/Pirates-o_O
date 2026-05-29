@@ -15,3 +15,4 @@ MonoBehaviour:
   itemID: skeleton
   displayName: Skeleton
   itemPrefab: {fileID: 5548632686864248340, guid: 42cc24f503dff439d8490dd8f62bcf0a, type: 3}
+  holdingPrefab: {fileID: 5548632686864248340, guid: 42cc24f503dff439d8490dd8f62bcf0a, type: 3}

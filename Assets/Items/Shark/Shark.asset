@@ -15,4 +15,4 @@ MonoBehaviour:
   itemID: shark
   displayName: Shark
   itemPrefab: {fileID: 3734127139562854529, guid: a624ca7cc8376446eb2516c5d9edf6b6, type: 3}
-  itemIcon: {fileID: 0}
+  holdingPrefab: {fileID: 3734127139562854529, guid: aff998c1554e0490b9b08d062207c08b, type: 3}

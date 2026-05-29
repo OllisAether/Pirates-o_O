@@ -15,4 +15,4 @@ MonoBehaviour:
   itemID: toilet_paper
   displayName: Toilet Paper
   itemPrefab: {fileID: 4472945020202288084, guid: 4ead1dc5004504cdc89aaacaf78a4aa2, type: 3}
-  itemIcon: {fileID: 0}
+  holdingPrefab: {fileID: 4472945020202288084, guid: 4ead1dc5004504cdc89aaacaf78a4aa2, type: 3}

@@ -20,7 +20,8 @@ namespace Inventory
     public GameObject ItemPrefab { get { return itemPrefab; } }
     
     [SerializeField]
-    private IUsable useBehavior;
-    public IUsable UseBehavior { get { return useBehavior; } }
+    [Tooltip("Prefab to use when the item is being held by the player. This object can have a use Behaviour attached to it for special interactions.")]
+    private GameObject holdingPrefab;
+    public GameObject HoldingPrefab { get { return holdingPrefab; } }
   }
 }

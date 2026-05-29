@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Persistence;
 using UnityEngine;
@@ -47,11 +48,21 @@ namespace Inventory
     private UnityEvent onInventoryFull = new UnityEvent();
     public UnityEvent OnInventoryFull { get { return onInventoryFull; } }
 
+    [SerializeField]
+    private Transform itemHoldPoint;
+    public Transform ItemHoldPoint { get { return itemHoldPoint; } }
+    [SerializeField]
+    private Transform cameraRoot;
+
+    private GameObject[] heldItemObjects;
+    
+
     void Start()
     {
       if (inventoryItems == null)
       {
         inventoryItems = new InventoryItem[inventorySize];
+
         OnInventoryChanged.Invoke(inventoryItems);
       } else if (inventoryItems.Length != inventorySize)
       {
@@ -59,10 +70,12 @@ namespace Inventory
         System.Array.Resize(ref inventoryItems, inventorySize);
       }
 
+      heldItemObjects = new GameObject[inventorySize];
+
       if (useItemAction != null)
       {
         useItemAction.action.Enable();
-        useItemAction.action.performed += ctx => UseItem(currentItem);
+        useItemAction.action.performed += ctx => UseCurrentItem();
       }
 
       if (switchItemAction != null)
@@ -78,13 +91,21 @@ namespace Inventory
     {
     }
 
-    public void UseItem(InventoryItem item)
+    public void UseCurrentItem()
     {
-      if (item != null && item.UseBehavior != null)
-      {
-        item.UseBehavior.Use();
-        onItemUsed.Invoke(item);
-      }
+      if (currentItem == null) return;
+
+      var itemObject = heldItemObjects[currentItemIndex];
+      if (itemObject == null) return;
+
+      var useBehaviour = itemObject.GetComponent<UseBehaviour>();
+      if (useBehaviour == null) return;
+
+      Debug.Log("Using item: " + currentItem.DisplayName);
+
+      useBehaviour.Use();
+
+      onItemUsed.Invoke(currentItem);
     }
 
     public void SwitchItem(int direction)
@@ -92,6 +113,10 @@ namespace Inventory
       if (inventoryItems.Length == 0)
       {
         currentItem = null;
+        currentItemIndex = -1;
+
+        UpdateActiveHeldItem();
+
         onCurrentItemChanged.Invoke(null);
         return;
       }
@@ -105,6 +130,9 @@ namespace Inventory
         {
           currentItemIndex = newIndex;
           currentItem = inventoryItems[currentItemIndex];
+
+          UpdateActiveHeldItem();
+
           onCurrentItemChanged.Invoke(currentItem);
           return;
         }
@@ -112,6 +140,10 @@ namespace Inventory
       } while (newIndex != currentItemIndex && i < inventoryItems.Length);
 
       currentItem = null;
+      currentItemIndex = -1;
+
+      UpdateActiveHeldItem();
+
       onCurrentItemChanged.Invoke(null);
     }
 
@@ -124,6 +156,26 @@ namespace Inventory
           inventoryItems[i] = item;
           currentItemIndex = i;
           currentItem = item;
+          
+          if (item.HoldingPrefab != null && itemHoldPoint != null)
+          {
+            if (heldItemObjects[i] != null)
+            {
+              Destroy(heldItemObjects[i]);
+            }
+
+            var itemObject = Instantiate(item.HoldingPrefab, itemHoldPoint);
+            var useBehaviour = itemObject.GetComponent<UseBehaviour>();
+            if (useBehaviour != null)
+            {
+              useBehaviour.SetPlayerTransform(transform);
+              useBehaviour.SetPlayerCameraRoot(cameraRoot);
+            }
+            heldItemObjects[i] = itemObject;
+          }
+
+          UpdateActiveHeldItem();
+
           onItemAdded.Invoke(item);
           onCurrentItemChanged.Invoke(currentItem);
           onInventoryChanged.Invoke(inventoryItems);
@@ -141,12 +193,30 @@ namespace Inventory
       {
         InventoryItem removedItem = inventoryItems[index];
         inventoryItems[index] = null;
+
+        if (heldItemObjects[index] != null)
+        {
+          Destroy(heldItemObjects[index]);
+          heldItemObjects[index] = null;
+        }
+
         onItemRemoved.Invoke(removedItem);
         onInventoryChanged.Invoke(inventoryItems);
 
         if (currentItemIndex == index)
         {
           SwitchItem(1);
+        }
+      }
+    }
+
+    private void UpdateActiveHeldItem()
+    {
+      for (int i = 0; i < heldItemObjects.Length; i++)
+      {
+        if (heldItemObjects[i] != null)
+        {
+          heldItemObjects[i].SetActive(i == currentItemIndex);
         }
       }
     }
@@ -166,6 +236,36 @@ namespace Inventory
       }
 
       inventoryItems = items;
+
+      for (int i = 0; i < inventoryItems.Length; i++)
+      {
+        if (inventoryItems[i] != null && inventoryItems[i].HoldingPrefab != null && itemHoldPoint != null)
+        {
+          if (heldItemObjects[i] != null)
+          {
+            Destroy(heldItemObjects[i]);
+          }
+
+          var itemObject = Instantiate(inventoryItems[i].HoldingPrefab, itemHoldPoint);
+          var useBehaviour = itemObject.GetComponent<UseBehaviour>();
+          if (useBehaviour != null)
+          {
+            useBehaviour.SetPlayerTransform(transform);
+            useBehaviour.SetPlayerCameraRoot(cameraRoot);
+          }
+          heldItemObjects[i] = itemObject;
+        }
+        else
+        {
+          if (heldItemObjects[i] != null)
+          {
+            Destroy(heldItemObjects[i]);
+            heldItemObjects[i] = null;
+          }
+        }
+      }
+
+      UpdateActiveHeldItem();
       onInventoryChanged.Invoke(inventoryItems);
     }
 

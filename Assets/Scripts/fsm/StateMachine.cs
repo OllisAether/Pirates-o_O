@@ -12,7 +12,7 @@ namespace FSM
     }
 
     private UnityEvent<State> onStateChanged = new UnityEvent<State>();
-    public UnityEvent<State> OnStateChanged { get { return onStateChanged; } }
+    public UnityEvent<State> OnStateChanged => onStateChanged;
 
     public void TransitionToState(State newState)
     {

@@ -1,0 +1,45 @@
+:root {
+}
+
+.dialog-box {
+    flex-grow: 1;
+    position: absolute;
+    left: 64px;
+    right: 64px;
+    bottom: 32px;
+    height: 150px;
+    background-color: rgba(10, 10, 41, 0.89);
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Fonts/Sora/Sora-ExtraBold.ttf?fileID=12800000&guid=ce573c940558d4741a0219b8ce511280&type=3#Sora-ExtraBold");
+    -unity-font-style: normal;
+    -unity-text-align: upper-left;
+}
+
+.speaker-box {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.dialog {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/Sora/Sora-ExtraBold.ttf?fileID=12800000&guid=ce573c940558d4741a0219b8ce511280&type=3#Sora-ExtraBold");
+    -unity-font-style: normal;
+    -unity-text-align: upper-center;
+    white-space: normal;
+}

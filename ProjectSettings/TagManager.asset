@@ -13,8 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Collectable
-  - Items
+  - Interactable
   - 
   - 
   - 
@@ -39,6 +38,7 @@ TagManager:
   - 
   - 
   - 
+  - Character
   m_SortingLayers:
   - name: Default
     uniqueID: 0

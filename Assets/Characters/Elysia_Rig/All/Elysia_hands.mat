@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Elysia_hands
   m_Shader: {fileID: 4800000, guid: be891319084e9d147b09d89e80ce60e0, type: 3}
-  m_Parent: {fileID: 2100000, guid: 3a8409c4d55b84274b86717cc0d80ebf, type: 2}
+  m_Parent: {fileID: 2100000, guid: 62a879bd3957b481fb4d3ebcdc7363a8, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _EMISSIVE_SIMPLE
@@ -40,12 +40,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _1st2nd_Shades_Feather: 0.0001
+    - _2nd_ShadeColor_Feather: 0.0001
+    - _2nd_ShadeColor_Step: 0
     - _Outline_Width: 5
+    - _RimLight: 1
     - _RimLight_InsideMask: 0.067
     - _RimLight_Power: 0.14
+    - _ShadeColor_Step: 0
     - _StencilComp: 0
     m_Colors:
-    - _1st_ShadeColor: {r: 0.6431373, g: 0.5647059, b: 0.56078434, a: 1}
+    - _1st_ShadeColor: {r: 0.54901963, g: 0.38431373, b: 0.37254903, a: 1}
     - _2nd_ShadeColor: {r: 0.44313726, g: 0.2784314, b: 0.29803923, a: 1}
     - _Outline_Color: {r: 0.40392157, g: 0.23921569, b: 0.23921569, a: 1}
     - _RimLightColor: {r: 1, g: 0.53333336, b: 0.5803922, a: 1}

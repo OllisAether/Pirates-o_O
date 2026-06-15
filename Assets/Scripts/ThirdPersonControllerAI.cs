@@ -83,7 +83,7 @@ namespace StarterAssets
     private NavMeshAgent thisAgent;
 
     private UnityEvent<Vector3> onDestinationReached = new UnityEvent<Vector3>();
-    public UnityEvent<Vector3> OnDestinationReached { get { return onDestinationReached; } }
+    public UnityEvent<Vector3> OnDestinationReached => onDestinationReached;
 
     private void Start()
     {

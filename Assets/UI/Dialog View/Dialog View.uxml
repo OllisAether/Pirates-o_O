@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Dialog%20View.uss?fileID=7433441132597879392&amp;guid=2a082398aff544c8e8e9033e424cf993&amp;type=3#Dialog View"/>
+    <ui:VisualElement name="" class="dialog-box">
+        <ui:VisualElement class="speaker-box" style="padding-left: 8px; padding-right: 16px;">
+            <ui:Label text="Speaker" name="Speaker" class="speaker"/>
+        </ui:VisualElement>
+        <ui:Label text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est." name="Dialog" class="dialog"/>
+    </ui:VisualElement>
+</ui:UXML>

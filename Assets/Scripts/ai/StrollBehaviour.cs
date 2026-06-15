@@ -13,14 +13,14 @@ namespace AI {
   {
     [SerializeField]
     private Transform[] waypoints = new Transform[0];
-    public Transform[] Waypoints { get { return waypoints; } }  
+    public Transform[] Waypoints => waypoints;  
 
     [SerializeField]
     private int startingWaypoint = 0;
 
     [SerializeField]
     private StrollMode strollMode = StrollMode.Cycle;
-    public StrollMode StrollMode { get { return strollMode; } }
+    public StrollMode StrollMode => strollMode;
 
     [SerializeField]
     private ThirdPersonControllerAI controller;
@@ -30,7 +30,7 @@ namespace AI {
     private StateMachine stateMachine = new StateMachine();
 
     private Vector3 reachedDestination;
-    public Vector3 ReachedDestination { get { return reachedDestination; } }
+    public Vector3 ReachedDestination => reachedDestination;
 
     void Start()
     {

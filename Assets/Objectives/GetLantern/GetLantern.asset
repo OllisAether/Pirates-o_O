@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b19d3ef919d49a89ff799d5d19dcac, type: 3}
+  m_Name: GetLantern
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectiveSystem.Objective
+  id: get_lantern
+  displayName: Light Needed
+  description: 
+  hiddenObjective: 0
+  autoStart: 1
+  prerequisiteObjectives: []
+  steps:
+  - stepPrefab: {fileID: 6249370965350634953, guid: 3e326241240254dd68850967acb31747, type: 3}
+    stepName: Get the Lantern
+  nextObjective: {fileID: 0}

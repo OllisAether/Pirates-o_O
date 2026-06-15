@@ -9,10 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 994a272fd43b64951aceaebbe61c78ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 67ff15785482a4e19886aa558c6ad1d9, type: 3}
   m_Name: Shark
-  m_EditorClassIdentifier: Assembly-CSharp::Inventory.InventoryItem
-  itemID: shark
-  displayName: Shark
-  itemPrefab: {fileID: 3734127139562854529, guid: a624ca7cc8376446eb2516c5d9edf6b6, type: 3}
-  holdingPrefab: {fileID: 3734127139562854529, guid: aff998c1554e0490b9b08d062207c08b, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::InventorySystem.Item
+  id: blahaj
+  displayName: Shark Plushy
+  isStackable: 0
+  useCustomStackLimit: 0
+  customStackLimit: 0
+  dropPrefab: {fileID: 2723743669912356812, guid: a9d9cb9b646644d3b89c5320de40aafb, type: 3}
+  inventoryDisplayPrefab: {fileID: 0}
+  holdable: 1
+  holdItemType: 2
+  holdPrefab: {fileID: 2723743669912356812, guid: 4575f69ae13574970b7f7be5e7148b71, type: 3}

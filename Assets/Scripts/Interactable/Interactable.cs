@@ -9,6 +9,10 @@ namespace Interactable
     private bool invokeOnInteractMessage = true;
 
     [SerializeField]
+    private Vector3 interactionPromptOffset = new Vector3(0, 0, 0);
+    public Vector3 InteractionPromptOffset => interactionPromptOffset;
+
+    [SerializeField]
     private UnityEvent<GameObject> onInteract;
     public UnityEvent<GameObject> OnInteract { get => onInteract; }
 

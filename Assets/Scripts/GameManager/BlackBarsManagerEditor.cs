@@ -8,12 +8,17 @@ namespace GameManager
   {
     public override void OnInspectorGUI()
     {
-      base.OnInspectorGUI();
+      EditorGUILayout.PropertyField(serializedObject.FindProperty("blackBarsDocument"));
+
+      EditorGUILayout.Space();
+      EditorGUILayout.LabelField("Testing", EditorStyles.boldLabel);
 
       if (GUILayout.Button("Toggle"))
       {
         ((BlackBarsManager)target).Toggle();
       }
+      
+      serializedObject.ApplyModifiedProperties();
     }
   }
 }

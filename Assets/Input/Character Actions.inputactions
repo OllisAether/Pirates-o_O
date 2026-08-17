@@ -294,6 +294,56 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Dialog",
+            "id": "54cb1003-42b9-4dd3-baae-824b8780cd3b",
+            "actions": [
+                {
+                    "name": "Continue",
+                    "type": "Button",
+                    "id": "1f3d2ad5-35f3-4fc3-bb5d-60524dc41981",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7bbd8f92-dc60-4675-97bc-b17f09916f32",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4ad74959-16b7-4204-afee-74e6856113dc",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d0a2478-2b58-46da-8c35-8b2ead6f52be",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Continue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

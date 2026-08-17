@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Utils;
 
 namespace ObjectiveSystem
 {
-
   public class ObjectiveManager : SingletonBehaviour<ObjectiveManager>
   {
     [SerializeField]

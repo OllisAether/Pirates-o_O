@@ -1,9 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Dialog%20View.uss?fileID=7433441132597879392&amp;guid=2a082398aff544c8e8e9033e424cf993&amp;type=3#Dialog View"/>
-    <ui:VisualElement name="" class="dialog-box">
-        <ui:VisualElement class="speaker-box" style="padding-left: 8px; padding-right: 16px;">
-            <ui:Label text="Speaker" name="Speaker" class="speaker"/>
+    <Style src="project://database/Assets/UI/Dialog%20View/Dialog%20View.uss?fileID=7433441132597879392&amp;guid=2a082398aff544c8e8e9033e424cf993&amp;type=3#Dialog View"/>
+    <DialogView class="dialog-container visible" style="transition-duration: 0.3s, 0.5s;">
+        <ui:VisualElement class="dialog-box">
+            <ui:Label text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr." name="dialog" class="dialog" style="font-size: 20px;"/>
+            <ui:Image source="project://database/Assets/Feel/FeelDemos/UIToolkitFeedbacksDemo/PanelSettings/DefaultTheme.tss?fileID=-1304905567622442630&amp;guid=d69ba10a5cfd9d748bd38f539b6646d9&amp;type=3#arrow-down@2x" scale-mode="ScaleToFit" uv="0,0,1,1" name="next-indicator" class="next-indicator visible" style="height: 24px; width: 24px;"/>
         </ui:VisualElement>
-        <ui:Label text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est." name="Dialog" class="dialog"/>
-    </ui:VisualElement>
+        <ui:VisualElement name="options" class="options">
+            <ui:Button text="Button"/>
+        </ui:VisualElement>
+        <ui:VisualElement class="speaker-box">
+            <ui:Label text="Speaker" name="speaker" class="speaker"/>
+        </ui:VisualElement>
+    </DialogView>
 </ui:UXML>

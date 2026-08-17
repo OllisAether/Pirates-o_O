@@ -3078,7 +3078,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: a3841ca6bbe7342f09416c2fef1fe962, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 6418180475301049370, guid: 8b35f83fdcc30434e8d37b43903e1c5f, type: 2}
+  m_Resource: {fileID: 8300000, guid: 3ba8f9ee3cb9c47719e970d6be16ef2c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -8044,15 +8044,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139299275266279701, guid: c0abe6958daf44677998c1ea58b4626e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.847858
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 139299275266279701, guid: c0abe6958daf44677998c1ea58b4626e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5525583
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 139299275266279701, guid: c0abe6958daf44677998c1ea58b4626e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.963304
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 139299275266279701, guid: c0abe6958daf44677998c1ea58b4626e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8521,6 +8521,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8763454851141014142}
+    - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5310386343090445527}
   m_SourcePrefab: {fileID: 100100000, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
 --- !u!4 &2980838014112177298 stripped
 Transform:
@@ -8591,12 +8594,7 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'Little_Proximal_R'\n\tTransform 'Ring_Intermediate_R'\n\tTransform
-    'Thumb_Proximal_L'\n\tTransform 'Thigh_R'\n\tTransform 'Bangs_Main'\n\tTransform
-    'Middle_Distal_L'\n\tTransform 'UpperArm_L'\n\tTransform 'Toe_L'\n\tTransform
-    'UpperChest'\n\tTransform 'Neck'\n\tand more ..."
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -8616,6 +8614,12 @@ MonoBehaviour:
   inventorySize: 20
   itemSlots: []
   onInventoryChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onItemAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  onItemRemoved:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &3050400372014248285
@@ -8651,6 +8655,18 @@ MonoBehaviour:
   interactionPrompt: {fileID: 4031775453111445356}
   interactionTriggers:
   - {fileID: 2374994834991509339}
+--- !u!114 &5310386343090445527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7469232440202421710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ed18a923d7343d0a0435ea9fe6cfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogController
 --- !u!4 &7846356835042246516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}

@@ -69,12 +69,16 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"h:"
+	"h: t=Transform"
+	"h: t=MeshFilter"
+	"h: t=MeshFilter vertices>=1024"
 	"intera"
 ]
 searchItemFavorites = [
 ]
 savedSearchesSortOrder = 0
-showSavedSearchPanel = false
+showSavedSearchPanel = true
 hideTabs = false
 indexOnEditorStartup = true
 logIndexingPerformanceReport = false

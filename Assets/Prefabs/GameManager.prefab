@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 4493045507274010606}
   - component: {fileID: 3745107321055385929}
   - component: {fileID: 1177872125974197060}
+  - component: {fileID: 2596842716641411860}
+  - component: {fileID: 3968618936133288755}
+  - component: {fileID: 4308796952511999985}
+  - component: {fileID: 5911944341576595959}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -74,3 +78,89 @@ MonoBehaviour:
   onObjectiveStepCompleted:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2596842716641411860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655475438440648912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88514c5b9a864b4c935d7403375c947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager.PlayerManager
+  currentPlayer: {fileID: 0}
+--- !u!114 &3968618936133288755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655475438440648912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd05f5c2bf1524721bc7253ffaa0f9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlackBarsManager
+  blackBarsDocument: {fileID: 0}
+--- !u!114 &4308796952511999985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655475438440648912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: c12f7ce105a804036b2e4bdc7daec186, type: 2}
+    - {fileID: 11400000, guid: 61e373b76f6b848e69b63ffd822b9c00, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3968618936133288755}
+          m_TargetAssemblyTypeName: GameManager.BlackBarsManager, Assembly-CSharp
+          m_MethodName: Show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3968618936133288755}
+          m_TargetAssemblyTypeName: GameManager.BlackBarsManager, Assembly-CSharp
+          m_MethodName: Hide
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &5911944341576595959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655475438440648912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e03374c9b74b4030be39f28fb636aa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogManager
+  dialogController: {fileID: 0}
+  dialogViewHandler: {fileID: 0}
+  startingDialogTree: {fileID: 0}

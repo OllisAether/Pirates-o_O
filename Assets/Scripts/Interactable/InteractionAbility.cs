@@ -11,9 +11,6 @@ namespace Interactable
     private GameObject interactor;
 
     [SerializeField]
-    private LayerMask interactableLayerMask;
-
-    [SerializeField]
     private Transform interactionPrompt;
 
     private List<Interactable> nearbyInteractables = new List<Interactable>();
@@ -49,30 +46,29 @@ namespace Interactable
 
     private void InteractionTriggerEnter(Collider other)
     {
-      if (interactableLayerMask == (interactableLayerMask | (1 << other.gameObject.layer)))
-      {
-        Interactable interactable = other.GetComponent<Interactable>();
+      Interactable interactable = other.GetComponent<Interactable>();
 
-        if (interactable != null)
-        {
-          nearbyInteractables.Add(interactable);
-        }
+      if (interactable != null)
+      {
+        Debug.Log($"{interactable.name} entered the interaction trigger.");
+        nearbyInteractables.Add(interactable);
+      } else
+      {
+        Debug.Log($"{other.name} does not have an Interactable component.");
       }
     }
 
     private void InteractionTriggerExit(Collider other)
     {
-      if (interactableLayerMask == (interactableLayerMask | (1 << other.gameObject.layer)))
+      Interactable interactable = other.GetComponent<Interactable>();
+      if (interactable != null)
       {
-        Interactable interactable = other.GetComponent<Interactable>();
-        if (interactable != null)
-        {
-          nearbyInteractables.Remove(interactable);
+        Debug.Log($"{interactable.name} exited the interaction trigger.");
+        nearbyInteractables.Remove(interactable);
 
-          if (interactable == nearestInteractable)
-          {
-            nearestInteractable = null;
-          }
+        if (interactable == nearestInteractable)
+        {
+          nearestInteractable = null;
         }
       }
     }
@@ -119,6 +115,7 @@ namespace Interactable
 
     private Vector3 CalculateIndicatorPosition(Interactable interactable)
     {
+      var offset = interactable.InteractionPromptOffset;
       var colliders = interactable.GetComponentsInChildren<Collider>();
 
       var bounds = colliders[0].bounds;
@@ -128,9 +125,9 @@ namespace Interactable
       }
 
       return new Vector3(
-        bounds.center.x,
-        bounds.max.y,
-        bounds.center.z
+        bounds.center.x + offset.x,
+        bounds.max.y + offset.y,
+        bounds.center.z + offset.z
       );
     }
 

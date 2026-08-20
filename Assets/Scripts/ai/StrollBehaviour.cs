@@ -13,10 +13,13 @@ namespace AI {
   {
     [SerializeField]
     private Transform[] waypoints = new Transform[0];
-    public Transform[] Waypoints => waypoints;  
+    public Transform[] Waypoints => waypoints;
+    
 
     [SerializeField]
     private int startingWaypoint = 0;
+    [SerializeField]
+    private float waypointIdleTime = 0f;
 
     [SerializeField]
     private StrollMode strollMode = StrollMode.Cycle;
@@ -36,7 +39,7 @@ namespace AI {
     {
       controller.OnDestinationReached.AddListener(OnDestinationReached);
 
-      stateMachine.CurrentState = new GoToWaypointState(this, waypoints[startingWaypoint]);
+      stateMachine.CurrentState = new GoToWaypointState(this, waypoints[startingWaypoint], waypointIdleTime);
     }
 
     void Update()
@@ -60,13 +63,15 @@ namespace AI {
   {
     private StrollBehaviour strollBehaviour;
     private Transform targetWaypoint;
+    private float waypointIdleTime = 0f;
 
     private const float waypointReachedThreshold = 0.1f;
 
-    public GoToWaypointState(StrollBehaviour strollBehaviour, Transform targetWaypoint)
+    public GoToWaypointState(StrollBehaviour strollBehaviour, Transform targetWaypoint, float waypointIdleTime = 0f)
     {
       this.strollBehaviour = strollBehaviour;
       this.targetWaypoint = targetWaypoint;
+      this.waypointIdleTime = waypointIdleTime;
     }
 
     public override void OnEnter()
@@ -74,9 +79,22 @@ namespace AI {
       strollBehaviour.SetTarget(targetWaypoint);
     }
 
+    private bool AtDestination => strollBehaviour.ReachedDestination != null && Vector3.Distance(strollBehaviour.ReachedDestination, targetWaypoint.position) < waypointReachedThreshold;
+    float idleTimer = 0f;
+    public override void OnUpdate(float deltaTime)
+    {
+      if (AtDestination)
+      {
+        idleTimer += deltaTime;
+      } else
+      {
+        idleTimer = 0f;
+      }
+    }
+
     public override State RequestStateTransition()
     {
-      if (strollBehaviour.ReachedDestination != null && Vector3.Distance(strollBehaviour.ReachedDestination, targetWaypoint.position) < waypointReachedThreshold)
+      if (AtDestination && idleTimer >= waypointIdleTime)
       {
         switch (strollBehaviour.StrollMode)
         {
@@ -88,7 +106,7 @@ namespace AI {
             break;
         }
 
-        var nextState = new GoToWaypointState(strollBehaviour, strollBehaviour.Waypoints[strollBehaviour.CurrentWaypointIndex]);
+        var nextState = new GoToWaypointState(strollBehaviour, strollBehaviour.Waypoints[strollBehaviour.CurrentWaypointIndex], waypointIdleTime);
 
         return nextState;
       }

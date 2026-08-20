@@ -12,6 +12,8 @@ namespace DialogSystem
     public DialogSpeakerOverride SpeakerOverride => speakerOverride;
     [SerializeField] private TypewriterSegment[] typewriterSegments;
     public TypewriterSegment[] TypewriterSegments => typewriterSegments;
+    [SerializeField] private bool autoAdvance = false;
+    public bool AutoAdvance => autoAdvance;
 
     public DialogSegment(
       DialogSpeaker speaker,

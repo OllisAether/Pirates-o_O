@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450ba45c6639e4526825ac6767d14901, type: 3}
+  m_Name: TWS 2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogTree
+  showBlackBars: 0
+  dialogSegments:
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I... I don't have one...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: What?! Rude, don't you know that I can make myself criminal if I sell
+        firearms to you?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm sorry... Where can I get a license?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: HAHAHHAHAHAHA!!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 1
+        delayOverride: 0.02
+        characterOverrides: []
+    autoAdvance: 1
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You can't get a license so fast. You have to earn it through training.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: And there is no trainer in this plane of existance.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ???
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Ok...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Yeah... Bye...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Please leave.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+  responses: []
+  objectiveToStart: {fileID: 0}

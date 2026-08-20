@@ -74,7 +74,7 @@
     background-color: rgb(255, 255, 255);
     -unity-font-definition: url("project://database/Assets/Fonts/Sora/Sora-ExtraBold.ttf?fileID=12800000&guid=ce573c940558d4741a0219b8ce511280&type=3#Sora-ExtraBold");
     font-size: 20px;
-    margin-top: 0;
+    margin-top: 8px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;

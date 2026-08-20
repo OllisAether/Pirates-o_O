@@ -26,11 +26,13 @@ namespace DialogSystem
 
       initalActionMap = playerInput.currentActionMap.name;
       playerInput.SwitchCurrentActionMap(dialogActionMapName);
+      Debug.Log($"Switched to {dialogActionMapName} action map for dialog");
     }
 
     public void OnDialogEnded()
     {
       playerInput.SwitchCurrentActionMap(initalActionMap);
+      Debug.Log($"Switched back to {initalActionMap} action map after dialog");
     }
 
     public void OnContinue(InputValue value)

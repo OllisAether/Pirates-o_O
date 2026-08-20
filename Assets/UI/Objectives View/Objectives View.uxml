@@ -1,9 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ui:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ui="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
->
-    
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Objectives%20View/Objectives%20View.uss?fileID=7433441132597879392&amp;guid=88520e6ddb00a4dbe96ad577b8898241&amp;type=3#Objectives View"/>
+    <ObjectivesView style="flex-grow: 1; transition-property: all; transition-duration: 0s; transition-timing-function: ease; transition-delay: 0s;">
+        <ui:VisualElement name="objective-banner" class="objective-banner">
+            <ui:VisualElement name="objective-banner-content-container" class="objective-banner__container" style="flex-grow: 1; transition-duration: 1s; transition-property: width;">
+                <ui:Label text="OBJECTIVE NAME" name="objective-banner-content"/>
+                <ui:Label text="Objective Description" name="objective-banner-desc"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="objective-banner-title-container" class="objective-banner__title">
+                <ui:Label text="NEW OBJECTIVE" name="objective-banner-title"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="current-objective-list" style="flex-grow: 1; top: 32px; left: 32px; position: absolute; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Sora/Sora-Bold.ttf?fileID=12800000&amp;guid=b7560adc923f945b582bacf7dad61928&amp;type=3#Sora-Bold&quot;); color: rgb(255, 255, 255); width: 360px;"/>
+    </ObjectivesView>
 </ui:UXML>

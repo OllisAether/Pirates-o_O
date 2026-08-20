@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450ba45c6639e4526825ac6767d14901, type: 3}
+  m_Name: Wake up
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogTree
+  showBlackBars: 0
+  dialogSegments:
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 1
+    typewriterSegments:
+    - text: '*yawn*'
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 1
+    typewriterSegments:
+    - text: New day, new me.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 1
+    typewriterSegments:
+    - text: That big obelisk looks enticing. Let's check it out!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  responses: []
+  objectiveToStart: {fileID: 11400000, guid: 4c0a9c0a61b65452d9069b3d000bf592, type: 2}

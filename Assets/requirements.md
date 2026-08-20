@@ -9,11 +9,11 @@ It is **mandatory** to have all these elements in the game:
 - ✅ **Observer Pattern** for exchanging high-level game events, for minimal dependencies between behaviors.
 - **Performant** handling and **spawning of objects** (Pooling, ECS, etc.). In a shooter, this should, e.g., be done for bullets, but generally for every object type that is spawned frequently. Don't do this for occasionally spawned stuff as it wastes lots of memory.
 - Using the *Feel Asset* wisely for some juice in the right moments when the player wants that extra bit of (positive or negative) satisfaction.
-- Usage of **ScriptableObjects** in one of the possible ways explained during the course. For example, representing abilities, stats, items, etc.
-- At least one high-level gameplay system beyond an inventory system (e.g. dialogue, quests, perception, combat, etc.
+- ✅ Usage of **ScriptableObjects** in one of the possible ways explained during the course. For example, representing abilities, stats, items, etc.
+- ✅ At least one high-level gameplay system beyond an inventory system (e.g. dialogue, quests, perception, combat, etc.
 - ✅ **Interaction-system** for interacting with potentially any object.
 - ✅ Usage of a **cinematic camera(s)** with **Cinemachine** and cinematic animation juice with **Timeline** (for example, things like cinematic feel when you (or someone else) enter a bar and everybody goes quiet and looks at the new guy, or when you shoot someone off a building, you cut to some extra nice slow-motion cam shot ... stuff like that).
-- **Visual quality** beyond the standard look of the demo scenes. Using the Unity URP and post-processing and/or one of our awesome shaders/FX packs from our Asset Library.
+- ✅ **Visual quality** beyond the standard look of the demo scenes. Using the Unity URP and post-processing and/or one of our awesome shaders/FX packs from our Asset Library.
 
 Bonus points are:
 

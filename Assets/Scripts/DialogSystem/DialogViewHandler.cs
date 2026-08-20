@@ -137,7 +137,7 @@ namespace DialogSystem
           options.Add(response.ResponseText);
         }
 
-        PlayDialogSegment(segment, options);
+        PlayDialogSegment(segment, null, options);
       }
       else
       {
@@ -156,7 +156,7 @@ namespace DialogSystem
       DialogView.Hide();
     }
     
-    public void PlayDialogSegment(DialogSegment segment, List<string> options = null, System.Action<int> onOptionChosen = null)
+    public void PlayDialogSegment(DialogSegment segment, System.Action onDialogEnded = null, List<string> options = null, System.Action<int> onOptionChosen = null)
     {
       StopAllCoroutines();
 
@@ -176,13 +176,14 @@ namespace DialogSystem
 
       DialogView.SetSpeaker(speakerName);
 
-      StartCoroutine(PlayDialogSequenceCoroutine(segment));
+      StartCoroutine(PlayDialogSequenceCoroutine(segment, onDialogEnded));
     }
 
-    private IEnumerator PlayDialogSequenceCoroutine(DialogSegment segment)
+    private IEnumerator PlayDialogSequenceCoroutine(DialogSegment segment, System.Action onDialogEnded)
     {
       yield return TypewriterCoroutine(segment);
       OnTypewriterEnd();
+      onDialogEnded?.Invoke();
     }
 
     public void SkipTypewriter()

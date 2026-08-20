@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: GetLantern
   m_EditorClassIdentifier: Assembly-CSharp::ObjectiveSystem.Objective
   id: get_lantern
-  displayName: Light Needed
+  displayName: Illuminare
   description: 
   hiddenObjective: 0
-  autoStart: 1
+  autoStart: 0
   prerequisiteObjectives: []
   steps:
   - stepPrefab: {fileID: 6249370965350634953, guid: 3e326241240254dd68850967acb31747, type: 3}
-    stepName: Get the Lantern
+    stepName: Find a light source
   nextObjective: {fileID: 0}

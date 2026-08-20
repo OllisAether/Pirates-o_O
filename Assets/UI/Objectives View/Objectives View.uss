@@ -1,0 +1,48 @@
+:root {
+}
+
+.objective-banner {
+    position: absolute;
+    align-items: center;
+    top: 20%;
+    width: 100%;
+}
+
+.objective-banner__title {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/Sora/Sora-Bold.ttf?fileID=12800000&guid=b7560adc923f945b582bacf7dad61928&type=3#Sora-Bold");
+    position: absolute;
+    top: 0%;
+    translate: 0% -70%;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.objective-banner__title .unity-label {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    align-self: center;
+    -unity-text-align: upper-center;
+}
+
+.objective-banner__container {
+    background-color: rgba(10, 10, 41, 0.89);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    -unity-font-definition: url("project://database/Assets/Fonts/Sora/Sora-Regular.ttf?fileID=12800000&guid=160f842ac022242909345e06dc319da0&type=3#Sora-Regular");
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    -unity-text-align: upper-center;
+}
+
+.objective-banner__container #objective-banner-content {
+    font-size: 32px;
+    align-self: center;
+    -unity-text-align: upper-center;
+}

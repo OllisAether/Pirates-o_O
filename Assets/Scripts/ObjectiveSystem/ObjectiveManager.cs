@@ -13,6 +13,7 @@ namespace ObjectiveSystem
     private Dictionary<string, Objective> objectiveDictionary;
 
     private Dictionary<string, ActiveObjective> currentObjectives = new Dictionary<string, ActiveObjective>();
+    public Dictionary<string, ActiveObjective> CurrentObjectives => currentObjectives;
     private Dictionary<string, Objective> completedObjectives = new Dictionary<string, Objective>();
 
     [SerializeField]
@@ -132,6 +133,16 @@ namespace ObjectiveSystem
       onObjectiveStepStarted.Invoke(activeObjective.CurrentStepInfo);
     }
 
+    public bool IsObjectiveActive(string objectiveId)
+    {
+      return currentObjectives.ContainsKey(objectiveId);
+    }
+
+    public bool IsObjectiveCompleted(string objectiveId)
+    {
+      return completedObjectives.ContainsKey(objectiveId);
+    }
+
     public void AdvanceObjective(Objective objective)
     {
       if (!currentObjectives.TryGetValue(objective.Id, out ActiveObjective activeObjective))
@@ -182,6 +193,14 @@ namespace ObjectiveSystem
         }
       }
       return true;
+    }
+
+    private UnityEvent<string> onTriggerEvent = new UnityEvent<string>();
+    public UnityEvent<string> OnTriggerEvent => onTriggerEvent;
+
+    public void TriggerEvent(string eventName)
+    {
+      onTriggerEvent.Invoke(eventName);
     }
   }
 }

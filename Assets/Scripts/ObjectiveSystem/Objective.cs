@@ -27,6 +27,7 @@ namespace ObjectiveSystem
 
     public string Id => id;
     public string DisplayName => displayName;
+    public string Description => description;
     public bool HiddenObjective => hiddenObjective;
     public bool AutoStart => autoStart;
     public Objective[] PrerequisiteObjectives => prerequisiteObjectives;

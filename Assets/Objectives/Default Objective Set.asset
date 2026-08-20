@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectiveSystem.ObjectiveSet
   objectives:
   - {fileID: 11400000, guid: 76ec36ae6c2c94ad78b093f47ac8119c, type: 2}
+  - {fileID: 11400000, guid: 503b93fab124247c6ada93a21da8bca5, type: 2}
+  - {fileID: 11400000, guid: 8a52daf9c9f8944888f0c0535f722d40, type: 2}

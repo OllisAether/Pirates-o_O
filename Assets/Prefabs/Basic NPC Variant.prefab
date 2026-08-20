@@ -78,6 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+    - {fileID: 4416926081852918493, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -161,5 +162,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   waypoints: []
   startingWaypoint: 0
+  waypointIdleTime: 0
   strollMode: 0
   controller: {fileID: 6857933837770646029}

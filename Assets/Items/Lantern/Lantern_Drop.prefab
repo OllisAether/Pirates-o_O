@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Interactable.Interactable
   invokeOnInteractMessage: 0
+  interactionPromptOffset: {x: 0, y: 0, z: 0}
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -359,7 +360,7 @@ AudioSource:
   m_GameObject: {fileID: 8869825219681862477}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: a3841ca6bbe7342f09416c2fef1fe962, type: 2}
+  OutputAudioMixerGroup: {fileID: -3165942800488051908, guid: 7e984f512e89b60468e829489e8883e3, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 279495005df984d18ba6b0be79be88d1, type: 3}
   m_PlayOnAwake: 0

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450ba45c6639e4526825ac6767d14901, type: 3}
+  m_Name: TWS 0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogTree
+  showBlackBars: 0
+  dialogSegments:
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Hello there, Adventurer!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You seem like you come from very very far away.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Like, you don't even know how to dress appropriate.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: That hat is so 3021~
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+  responses:
+  - responseText: insult back
+    nextDialogTree: {fileID: 11400000, guid: cc048ef7efbeb4c9ab333b6214948062, type: 2}
+  - responseText: ignore the insult
+    nextDialogTree: {fileID: 11400000, guid: 0cddc125a13174e708cdca3841574015, type: 2}
+  objectiveToStart: {fileID: 0}

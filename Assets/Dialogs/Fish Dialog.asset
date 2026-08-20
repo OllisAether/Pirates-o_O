@@ -80,7 +80,7 @@ MonoBehaviour:
       overridePitch: 0
       pitch: 0
     typewriterSegments:
-    - text: 'The fish hasn''t rotten yet. '
+    - text: The fish hasn't rotten yet.
       timingOverrides:
         postDelay: 0.5
         overridePitch: 0
@@ -88,7 +88,9 @@ MonoBehaviour:
         overrideDelay: 0
         delayOverride: 0
         characterOverrides: []
-    - text: Was someone here?
+    - text: '
+
+        Was someone here?'
       timingOverrides:
         postDelay: 0
         overridePitch: 0

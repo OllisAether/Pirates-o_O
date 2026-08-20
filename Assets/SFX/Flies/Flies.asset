@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6692258570846459194
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 5_{-6692258570846459194}
+  m_AudioClip: {fileID: 8300000, guid: d9d1bbd45ead847248ec97111e5de516, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5444876272484792611
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 10_{-5444876272484792611}
+  m_AudioClip: {fileID: 8300000, guid: 25b8c6dc553aa4753b01581bb7b53ac5, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3933697886010255908
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 9_{-3933697886010255908}
+  m_AudioClip: {fileID: 8300000, guid: 5b74ee774b3f646cbba57d2ce63c784e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3446274023575390333
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 7_{-3446274023575390333}
+  m_AudioClip: {fileID: 8300000, guid: 84c86ec96ba86403f80b2a5f0201deb7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2217604701518890293
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 6_{2217604701518890293}
+  m_AudioClip: {fileID: 8300000, guid: e3debff315db14fbebc0940fa9758242, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2933943190910130434
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animals, Insect, Fly, Buzz Around, Close Up 01 SND14742 8_{2933943190910130434}
+  m_AudioClip: {fileID: 8300000, guid: 28559df57627b47658e297120c874ec7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Flies
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -6692258570846459194}
+  - {fileID: 2217604701518890293}
+  - {fileID: -3446274023575390333}
+  - {fileID: 2933943190910130434}
+  - {fileID: -3933697886010255908}
+  - {fileID: -5444876272484792611}
+  m_AvoidRepeatingLast: 2
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

@@ -42,3 +42,4 @@ MonoBehaviour:
   responses:
   - responseText: '*ignore*'
     nextDialogTree: {fileID: 0}
+  objectiveToStart: {fileID: 11400000, guid: 76ec36ae6c2c94ad78b093f47ac8119c, type: 2}

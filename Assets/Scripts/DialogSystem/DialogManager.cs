@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using GameManager;
+using ObjectiveSystem;
 using UnityEngine;
 using Utils;
 
@@ -32,9 +33,10 @@ namespace DialogSystem
 
     private DialogTree currentDialogTree;
     private int currentSegmentIndex = 0;
-    public void PlayDialogTree(DialogTree dialogTree)
+    private void PlayDialogTree(DialogTree dialogTree)
     {
       currentDialogTree = dialogTree;
+      currentSegmentIndex = 0;
       
       if (dialogTree.ShowBlackBars)
       {
@@ -65,7 +67,7 @@ namespace DialogSystem
           options.Add(response.ResponseText);
         }
 
-        dialogViewHandler.PlayDialogSegment(segment, options, (chosenResponseIndex) =>
+        dialogViewHandler.PlayDialogSegment(segment, null, options, (chosenResponseIndex) =>
         {
           var chosenResponse = responses[chosenResponseIndex];
 
@@ -85,22 +87,40 @@ namespace DialogSystem
         });
       } else
       {
-        dialogViewHandler.PlayDialogSegment(segment);
+        dialogViewHandler.PlayDialogSegment(segment, () => {
+          if (segment.AutoAdvance)
+          {
+            PlayNextDialogSegment();
+          }
+        });
       }
     }
 
     public void EndDialog()
     {
-      currentDialogTree = null;
-      currentSegmentIndex = 0;
       dialogViewHandler.Hide();
       BlackBarsManager.Instance.Hide();
       dialogController.OnDialogEnded();
+
+      if (currentDialogTree?.ObjectiveToStart != null)
+      {
+        ObjectiveManager.Instance.StartObjective(currentDialogTree.ObjectiveToStart);
+      }
+      
+      currentSegmentIndex = 0;
+      currentDialogTree = null;
     }
 
     private void OnContinue()
     {
       if (currentDialogTree == null) return;
+      var currentSegment = currentDialogTree.DialogSegments[currentSegmentIndex - 1];
+      if (currentSegment == null) return;
+
+      if (currentSegment.AutoAdvance)
+      {
+        return;
+      }
 
       if (dialogViewHandler.TypewriterIsPlaying)
       {

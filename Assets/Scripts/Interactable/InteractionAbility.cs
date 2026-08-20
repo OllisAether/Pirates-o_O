@@ -76,6 +76,7 @@ namespace Interactable
     private void RemoveDestroyedInteractables()
     {
       nearbyInteractables.RemoveAll(interactable => interactable == null);
+      nearbyInteractables.RemoveAll(interactable => interactable.gameObject.activeInHierarchy == false);
     }
 
     private void CalculateNearestInteractable()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace DialogSystem
 {
+  #if UNITY_EDITOR
   [CustomEditor(typeof(DialogViewHandler))]
   public class DialogViewHandlerEditor : Editor
   {
@@ -50,4 +51,5 @@ namespace DialogSystem
       serializedObject.ApplyModifiedProperties();
     }
   }
+  #endif
 }

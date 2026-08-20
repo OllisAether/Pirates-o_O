@@ -1,3 +1,4 @@
+using ObjectiveSystem;
 using UnityEngine;
 
 namespace DialogSystem
@@ -11,5 +12,7 @@ namespace DialogSystem
     public DialogSegment[] DialogSegments => dialogSegments;
     [SerializeField] private DialogResponse[] responses;
     public DialogResponse[] Responses => responses;
+    [SerializeField] private Objective objectiveToStart;
+    public Objective ObjectiveToStart => objectiveToStart;
   }
 }

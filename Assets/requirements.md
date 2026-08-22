@@ -4,11 +4,11 @@ Your final semester project in this course is to create a prototype of a 3D pira
 
 It is **mandatory** to have all these elements in the game:
 
-- **Pathfinding** (e.g., for enemies finding the way around obstacles, but this can also be for animals, etc.)
-- **FSM** (e.g., for some simple enemy AI, player state, Game-Manager, etc.)
+- ✅ **Pathfinding** (e.g., for enemies finding the way around obstacles, but this can also be for animals, etc.)
+- ✅ **FSM** (e.g., for some simple enemy AI, player state, Game-Manager, etc.)
 - ✅ **Observer Pattern** for exchanging high-level game events, for minimal dependencies between behaviors.
 - **Performant** handling and **spawning of objects** (Pooling, ECS, etc.). In a shooter, this should, e.g., be done for bullets, but generally for every object type that is spawned frequently. Don't do this for occasionally spawned stuff as it wastes lots of memory.
-- Using the *Feel Asset* wisely for some juice in the right moments when the player wants that extra bit of (positive or negative) satisfaction.
+- ✅ Using the *Feel Asset* wisely for some juice in the right moments when the player wants that extra bit of (positive or negative) satisfaction.
 - ✅ Usage of **ScriptableObjects** in one of the possible ways explained during the course. For example, representing abilities, stats, items, etc.
 - ✅ At least one high-level gameplay system beyond an inventory system (e.g. dialogue, quests, perception, combat, etc.
 - ✅ **Interaction-system** for interacting with potentially any object.

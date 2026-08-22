@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using GameManager;
 using ObjectiveSystem;
 using UnityEngine;
+using UnityEngine.Events;
 using Utils;
 
 namespace DialogSystem
@@ -15,6 +16,9 @@ namespace DialogSystem
     public DialogViewHandler DialogViewHandler => dialogViewHandler;
 
     [SerializeField] private DialogTree startingDialogTree;
+    private UnityEvent<string> onDialogEvent = new UnityEvent<string>();
+    public UnityEvent<string> OnDialogEvent => onDialogEvent;
+
     private void Start()
     {
       if (startingDialogTree != null)
@@ -27,12 +31,18 @@ namespace DialogSystem
 
     public void StartDialog(DialogTree dialogTree)
     {
+      StartDialog(dialogTree, null);
+    }
+    public void StartDialog(DialogTree dialogTree, System.Action onDialogEndCallback = null)
+    {
       dialogController.OnDialogStarted(dialogTree);
+      currentDialogEndCallback = onDialogEndCallback;
       PlayDialogTree(dialogTree);
     }
 
     private DialogTree currentDialogTree;
     private int currentSegmentIndex = 0;
+    private System.Action currentDialogEndCallback;
     private void PlayDialogTree(DialogTree dialogTree)
     {
       currentDialogTree = dialogTree;
@@ -56,6 +66,12 @@ namespace DialogSystem
 
       var segment = currentDialogTree.DialogSegments[currentSegmentIndex];
       currentSegmentIndex++;
+
+      for (int i = 0; i < segment.DialogEvents.Length; i++)
+      {
+        Debug.Log($"Invoking dialog event: {segment.DialogEvents[i]}");
+        onDialogEvent?.Invoke(segment.DialogEvents[i]);
+      }
       
       if (currentSegmentIndex >= currentDialogTree.DialogSegments.Length && currentDialogTree.Responses != null && currentDialogTree.Responses.Length > 0)
       {
@@ -96,11 +112,12 @@ namespace DialogSystem
       }
     }
 
-    public void EndDialog()
+    private void EndDialog()
     {
       dialogViewHandler.Hide();
       BlackBarsManager.Instance.Hide();
       dialogController.OnDialogEnded();
+      currentDialogEndCallback?.Invoke();
 
       if (currentDialogTree?.ObjectiveToStart != null)
       {
@@ -109,6 +126,7 @@ namespace DialogSystem
       
       currentSegmentIndex = 0;
       currentDialogTree = null;
+      currentDialogEndCallback = null;
     }
 
     private void OnContinue()

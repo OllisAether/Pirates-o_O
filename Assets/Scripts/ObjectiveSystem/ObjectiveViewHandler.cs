@@ -93,14 +93,25 @@ namespace ObjectiveSystem
 
     private void HandleObjectiveCompleted(Objective objective)
     {
-      PlayObjectiveCompleteAnimation(objective.DisplayName, "");
+      PlayObjectiveCompleteAnimation(objective.DisplayName, objective.Description);
       UpdateCurrentObjectives();
     }
 
     private void UpdateCurrentObjectives()
     {
-      var currentObjectives = ObjectiveManager.Instance.CurrentObjectives.Values.ToArray();
-      ObjectivesView.SetCurrentObjectives(currentObjectives);
+      var currentObjectives = ObjectiveManager.Instance.CurrentObjectives.Values.ToList();
+
+      for (int i = 0; i < currentObjectives.Count; i++)
+      {
+        var activeObjective = currentObjectives[i];
+        if (activeObjective.Objective.HiddenObjective)
+        {
+          currentObjectives.RemoveAt(i);
+          i--;
+        }
+      }
+
+      ObjectivesView.SetCurrentObjectives(currentObjectives.ToArray());
     }
   }
 }

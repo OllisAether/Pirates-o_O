@@ -16,37 +16,14 @@ namespace ObjectiveSystem
     private void Start()
     {
       ObjectiveManager.Instance.OnObjectiveCompleted.AddListener(OnObjectiveCompleted);
-
-      var colliders = GetComponentsInChildren<Collider>();
-      foreach (var collider in colliders)
-      {
-        collider.isTrigger = true;
-      }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-      if (other.CompareTag(playerTag))
+      Debug.Log($"Collision detected with {other.gameObject.name}");
+      if (other.gameObject.CompareTag(playerTag))
       {
-        var colliders = GetComponentsInChildren<Collider>();
-        foreach (var collider in colliders)
-        {
-          collider.isTrigger = false;
-        }
-
         onRejected?.Invoke();
-      }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-      if (other.CompareTag(playerTag))
-      {
-        var colliders = GetComponentsInChildren<Collider>();
-
-        foreach (var collider in colliders)
-        {
-          collider.isTrigger = true;
-        }
       }
     }
 

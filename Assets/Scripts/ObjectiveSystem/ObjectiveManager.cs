@@ -200,6 +200,7 @@ namespace ObjectiveSystem
 
     public void TriggerEvent(string eventName)
     {
+      Debug.Log($"Triggering event: {eventName}");
       onTriggerEvent.Invoke(eventName);
     }
   }

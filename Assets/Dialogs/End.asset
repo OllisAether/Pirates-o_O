@@ -1,0 +1,1997 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450ba45c6639e4526825ac6767d14901, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: Assembly-CSharp::DialogSystem.DialogTree
+  showBlackBars: 1
+  dialogSegments:
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: What was that? Teto, are you...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: What?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: TETO!?!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 1
+        pitchOverride: 1.25
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: My dad always called me lazy, but...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: GET AWAY FROM THE EDGE!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 1
+        pitchOverride: 1.25
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You saw the meme. It was hilarious. no?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I don't care about the meme! I care about you!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Heh... why?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Because you matter to me!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: 'He tortured me for years. '
+      timingOverrides:
+        postDelay: 0.2
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    - text: Kept me under his control with those demeaning words.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I cared about my dad.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I tried so hard to make him like me.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then let me care about you now!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: And then he abused me.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: HAHAHHAHAHAHAHA
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 1
+        delayOverride: 0.02
+        characterOverrides: []
+    autoAdvance: 1
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: He abused me! Isn't that funny?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: No. Teto, it isn't funny. None of it was your fault.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't understand.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then make me understand!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Just, please, keep talking to me!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm done with it.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Out here in the desert, I can finally be free.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Nobody else is here. I manifested this place myself.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then why am I here?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I created this desert. Every grain of sand.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You said nobody else is here. But I'm here.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You created me, didn't you?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You created someone who cares about you.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Hahahaha, nonono.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: This time, someone I can torture.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't have to torture me.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't have to torture yourself either.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Stop saying things like that.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm not leaving.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You can't stop me.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Maybe I can't reach you from here...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: But I can stay. I can keep talking.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I can listen for as long as you need.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Teto, please. Take one step back.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: WHY?!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Because I don't want the last thing I ever say to you to be your name
+        screamed from the ground.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Because you think one sentence can fix everything?!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You think standing down there and shouting makes you understand me?!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: No! I know I don't understand everything! But I know you're hurting!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm angry! I'm so angry I can barely breathe!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm angry at him, at myself, at this stupid desert, at you for making
+        me hesitate!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then be angry! Yell at me! Throw sand! Just don't step forward!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You keep saying "one step" like it's nothing.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I know it isn't nothing.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I know it feels like the biggest thing in the world right now.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't know anything!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then tell me!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Tell me how heavy it is! Tell me how much it hurts!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'll listen!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: And what will that change?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Maybe nothing tonight. But you'll still be here tonight.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I used to lock my bedroom door and sit on the floor with my back against
+        it, listening for his footsteps.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Teto...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I would hold my breath whenever the hallway creaked.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'd stare at the doorknob and pray it wouldn't turn.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I kept thinking, "Please don't come in. Please don't come in."
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: That house never felt like a home. It felt like a prison.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You should never have had to live like that.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I tried to make myself disappear before I ever thought about doing it
+        for real.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I stayed quiet.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I stopped asking for things.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I learned which floorboards wouldn't creak. I learned how to lock the
+        door, how to hide, how to wait until he left.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You were surviving!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I was struggling with suicide for so long.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I thought about it in that room, behind that locked door, while hoping
+        he wouldn't come.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I thought maybe if I vanished, the house would finally be quiet.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Maybe I wouldn't have to be afraid anymore.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm so sorry you were alone with that.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: 'I wasn''t just sad. '
+      timingOverrides:
+        postDelay: 0.2
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    - text: I was terrified.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Every time I heard him outside, my whole body knew before I did.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: And when he called me lazy, worthless, ungrateful...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides:
+        - Character: 44
+          Delay: 0.1
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I started believing him.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I thought maybe being hurt was all I was good for.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: He was wrong!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I know that now.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Sometimes. Then the memories come back, and I'm that
+        little boy again.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: The one I insisted I was back then, before I understood who I really was.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Me hiding under my blanket and begging the door lock would hold.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't have to hide from it anymore. You're not alone!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Don't promise me forever.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I won't. I'll promise you this moment.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm here, and I'm listening.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I don't know how to be safe.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then we'll start with one breath.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then another.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You don't have to solve your whole life from that edge.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: What if I step back and it all comes back?
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then we'll face it one moment at a time.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: But please, Teto, step back so there can be a next moment.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: ...
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You can unlock the door now. You can let someone in.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - top_cam
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I can't.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: You can. You don't have to do it alone.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm trying.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents:
+    - bottom_cam
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I know. Lean back. Let the ground hold you.
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: "I don't want to die! I'm scared!"
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I know! Don't let go!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I'm sorry!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Don't apologize!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I don't want to disappear!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Then hold on!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I can't!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: Please!
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 0
+    dialogEvents: []
+  - speaker: {fileID: 11400000, guid: 666e59af3926f489e95bbfe99ac88e5c, type: 2}
+    speakerOverride:
+      overrideName: 0
+      name: 
+      overridePitch: 0
+      pitch: 0
+    typewriterSegments:
+    - text: I don't want to-
+      timingOverrides:
+        postDelay: 0
+        overridePitch: 0
+        pitchOverride: 0
+        overrideDelay: 0
+        delayOverride: 0
+        characterOverrides: []
+    autoAdvance: 1
+    dialogEvents: []

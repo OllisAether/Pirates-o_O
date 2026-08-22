@@ -109,6 +109,9 @@ namespace StarterAssets
       if(Target != null)
       {
         thisAgent.SetDestination(Target.position);
+      } else
+      {
+        thisAgent.ResetPath();
       }
 
       JumpAndGravity();

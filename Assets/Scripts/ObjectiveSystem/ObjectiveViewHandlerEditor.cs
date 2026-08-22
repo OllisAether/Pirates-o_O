@@ -1,9 +1,9 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
 namespace ObjectiveSystem
 {
-  #if UNITY_EDITOR
   [CustomEditor(typeof(ObjectiveViewHandler))]
   public class ObjectiveViewHandlerEditor : Editor
   {
@@ -18,5 +18,5 @@ namespace ObjectiveSystem
       }
     }
   }
-  #endif
 }
+#endif

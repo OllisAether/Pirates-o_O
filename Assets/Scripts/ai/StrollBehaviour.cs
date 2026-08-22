@@ -57,6 +57,21 @@ namespace AI {
     {
       controller.Target = target;
     }
+
+    private Transform pauseTarget;
+    internal bool isPaused = false;
+    public void PauseStroll()
+    {
+      pauseTarget = controller.Target;
+      controller.Target = null;
+      isPaused = true;
+    }
+
+    public void ResumeStroll()
+    {
+      controller.Target = pauseTarget;
+      isPaused = false;
+    }
   }
 
   public class GoToWaypointState : State
@@ -83,6 +98,8 @@ namespace AI {
     float idleTimer = 0f;
     public override void OnUpdate(float deltaTime)
     {
+      if (strollBehaviour.isPaused) return;
+
       if (AtDestination)
       {
         idleTimer += deltaTime;
@@ -94,6 +111,8 @@ namespace AI {
 
     public override State RequestStateTransition()
     {
+      if (strollBehaviour.isPaused) return null;
+
       if (AtDestination && idleTimer >= waypointIdleTime)
       {
         switch (strollBehaviour.StrollMode)

@@ -84,7 +84,7 @@ Material:
     - _DstBlendAlpha: 0
     - _Enable_Ambient_Occlusion: 0
     - _Enable_Base_Texture: 1
-    - _Enable_Emission: 1
+    - _Enable_Emission: 0
     - _Enable_Emission_Texture: 1
     - _Enable_Normal_Texture: 0
     - _Enable_Overlay_Texture: 0
@@ -167,7 +167,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color_Tint: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Emission_Color: {r: 40.85002, g: 11.569008, b: 57.0379, a: 0}
+    - _Emission_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Emission_Color_Tint: {r: 0, g: 0, b: 0, a: 0}
     - _Emission_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Emission_Tiling: {r: 1, g: 1, b: 0, a: 0}

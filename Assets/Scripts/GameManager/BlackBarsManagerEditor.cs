@@ -1,9 +1,9 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
 namespace GameManager
 {
-  #if UNITY_EDITOR
   [CustomEditor(typeof(BlackBarsManager))]
   public class BlackBarsManagerEditor : Editor
   {
@@ -22,5 +22,5 @@ namespace GameManager
       serializedObject.ApplyModifiedProperties();
     }
   }
-  #endif
 }
+#endif

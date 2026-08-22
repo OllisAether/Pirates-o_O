@@ -14,6 +14,8 @@ namespace DialogSystem
     public TypewriterSegment[] TypewriterSegments => typewriterSegments;
     [SerializeField] private bool autoAdvance = false;
     public bool AutoAdvance => autoAdvance;
+    [SerializeField] private string[] dialogEvents;
+    public string[] DialogEvents => dialogEvents;
 
     public DialogSegment(
       DialogSpeaker speaker,

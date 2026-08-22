@@ -180,5 +180,13 @@ namespace InventorySystem
       SetHoldItemIndex(index);
       Debug.Log($"Now holding item: {itemSlot.Item.DisplayName}");
     }
+  
+    public void OnUseItem(InputValue value)
+    {
+      if (currentItemSlot != null && currentItemSlot.Item != null)
+      {
+        heldItemObjects[currentItemSlot].GetComponent<OnItemUsed>()?.UseItem();
+      }
+    }
   }
 }

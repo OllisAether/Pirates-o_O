@@ -17,7 +17,7 @@ public partial class ObjectivesView : VisualElement
   private float objectiveBannerDuration = 4f;
   public float ObjectiveBannerDuration => objectiveBannerDuration;
 
-  private VisualTreeAsset currentObjectivesContainerTemplate => AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UI/Objectives View/CurrentObjectiveContainer.uxml");
+  private VisualTreeAsset currentObjectivesContainerTemplate => Resources.Load<VisualTreeAsset>("CurrentObjectiveContainer");
 
   public ObjectivesView() {}
 

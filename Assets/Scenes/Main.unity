@@ -51366,7 +51366,6 @@ GameObject:
   - component: {fileID: 438446055}
   - component: {fileID: 438446056}
   - component: {fileID: 438446057}
-  - component: {fileID: 438446058}
   m_Layer: 0
   m_Name: == Obelisk Cutscene ==
   m_TagString: Untagged
@@ -51417,8 +51416,6 @@ PlayableDirector:
     value: {fileID: 438446057}
   - key: {fileID: 863332864430866388, guid: 65be89839abc640a58c17bf6adf2ecbe, type: 2}
     value: {fileID: 652576630}
-  - key: {fileID: -8574394292668381666, guid: 65be89839abc640a58c17bf6adf2ecbe, type: 2}
-    value: {fileID: 438446058}
   m_ExposedReferences:
     m_References:
     - aa33459e8f8274a318f52d7a0aa9ac51: {fileID: 1652715925}
@@ -51519,36 +51516,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &438446058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438446054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: 4d648032a73f54844b5508ee62a7bb03, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1195101825}
-          m_TargetAssemblyTypeName: DialogSystem.DialogManager, Assembly-CSharp
-          m_MethodName: StartDialog
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: DialogSystem.DialogTree, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &438758780
 PrefabInstance:
   m_ObjectHideFlags: 0

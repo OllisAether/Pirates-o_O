@@ -22,6 +22,11 @@ namespace StarterAssets
 
 		[SerializeField] private bool enablePlayerInput = true;
 
+		public void EnablePlayerInput(bool enable)
+		{
+			enablePlayerInput = enable;
+		}
+
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{

@@ -6,7 +6,7 @@ You wake up in an unfamiliar place, discover you need a light source and comfort
 
 The end of the game might hold a surprise :>
 
-Playtime: ~10 minutes
+Playtime: ~15 minutes
 
 ## Unity Version
 

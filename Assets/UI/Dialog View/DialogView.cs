@@ -7,7 +7,7 @@ public partial class DialogView : VisualElement
   private Label DialogText => this.Q<Label>("dialog");
   private Label SpeakerText => this.Q<Label>("speaker");
   private VisualElement OptionsContainer => this.Q<VisualElement>("options");
-  private Image NextIndicator => this.Q<Image>("next-indicator");
+  private VisualElement NextIndicator => this.Q<VisualElement>("next-indicator");
 
   public string Dialog => DialogText.text;
   public string Speaker => SpeakerText.text;

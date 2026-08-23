@@ -49,6 +49,7 @@ MonoBehaviour:
     autoAdvance: 0
     dialogEvents:
     - bottom_cam
+    - hide_player
   - speaker: {fileID: 11400000, guid: 9bdc22e8364da452d9f4998369480487, type: 2}
     speakerOverride:
       overrideName: 0
@@ -1501,8 +1502,7 @@ MonoBehaviour:
       overridePitch: 0
       pitch: 0
     typewriterSegments:
-    - text: Sometimes. Then the memories come back, and I'm that
-        little boy again.
+    - text: Sometimes. Then the memories come back, and I'm that little boy again.
       timingOverrides:
         postDelay: 0
         overridePitch: 0
@@ -1519,7 +1519,8 @@ MonoBehaviour:
       overridePitch: 0
       pitch: 0
     typewriterSegments:
-    - text: The one I insisted I was back then, before I understood who I really was.
+    - text: The one I insisted I was back then, before I understood who I really
+        was.
       timingOverrides:
         postDelay: 0
         overridePitch: 0
@@ -1849,7 +1850,7 @@ MonoBehaviour:
       overridePitch: 0
       pitch: 0
     typewriterSegments:
-    - text: "I don't want to die! I'm scared!"
+    - text: I don't want to die! I'm scared!
       timingOverrides:
         postDelay: 0
         overridePitch: 0
@@ -1995,3 +1996,5 @@ MonoBehaviour:
         characterOverrides: []
     autoAdvance: 1
     dialogEvents: []
+  responses: []
+  objectiveToStart: {fileID: 0}

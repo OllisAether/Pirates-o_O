@@ -129,7 +129,7 @@ namespace StarterAssets
       {
         Move(thisAgent.desiredVelocity.normalized, 0f);
 
-        if (onDestinationReached != null && !destinationReached)
+        if (onDestinationReached != null && !destinationReached && Target != null)
         {
           onDestinationReached.Invoke(Target.position);
           destinationReached = true;

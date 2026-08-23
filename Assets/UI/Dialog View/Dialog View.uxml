@@ -3,7 +3,9 @@
     <DialogView class="dialog-container visible" style="transition-duration: 0.3s, 0.5s;">
         <ui:VisualElement class="dialog-box">
             <ui:Label text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr." name="dialog" class="dialog" style="font-size: 20px;"/>
-            <ui:Image source="project://database/Assets/Feel/FeelDemos/UIToolkitFeedbacksDemo/PanelSettings/DefaultTheme.tss?fileID=-1304905567622442630&amp;guid=d69ba10a5cfd9d748bd38f539b6646d9&amp;type=3#arrow-down@2x" scale-mode="ScaleToFit" uv="0,0,1,1" name="next-indicator" class="next-indicator visible" style="height: 24px; width: 24px;"/>
+            <ui:VisualElement name="next-indicator" class="next-indicator visible">
+                <ui:VisualElement style="flex-grow: 1; border-top-width: 15px; border-left-width: 5px; border-right-width: 5px; border-right-color: rgba(0, 0, 0, 0); border-top-color: rgb(255, 255, 255); border-bottom-width: 0;"/>
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="options" class="options">
             <ui:Button text="Button"/>
